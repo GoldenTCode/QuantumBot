@@ -10,6 +10,7 @@ export namespace Commands {
             name: "help",
             description: "Help Command",
             category: CommandCategory.Utility,
+            permission: "Everyone",
             type: ApplicationCommandTypes.CHAT_INPUT,
             options: [],
             defaultMemberPermissions: undefined,

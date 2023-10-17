@@ -9,6 +9,8 @@ export enum CommandCategory {
 
 export type CreateApplicationCommandOptionsNew = CreateApplicationCommandOptions &  {
     category: CommandCategory,
+    description: string,
+    permission: string,
     options: ApplicationCommandOptions | []
 }
 

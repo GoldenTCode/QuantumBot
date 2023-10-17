@@ -4,6 +4,7 @@
     "start": "tsx src/index.ts"
   },
   "dependencies": {
+    "@oceanicjs/builders": "^1.1.9",
     "dotenv": "^16.3.1",
     "fs": "^0.0.1-security",
     "oceanic.js": "^1.8.1",

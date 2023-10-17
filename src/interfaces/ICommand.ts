@@ -1,4 +1,5 @@
 import { ApplicationCommandOptions, CommandInteraction, CreateApplicationCommandOptions } from "oceanic.js";
+import { QuantumBot } from "src";
 
 export enum CommandCategory {
     Utility = "Utility",
@@ -14,5 +15,5 @@ export type CreateApplicationCommandOptionsNew = CreateApplicationCommandOptions
 export interface Command {
     info: CreateApplicationCommandOptionsNew;
 
-    execute(interaction: CommandInteraction): void;
+    execute(client: QuantumBot.Bot, interaction: CommandInteraction): void;
 }
